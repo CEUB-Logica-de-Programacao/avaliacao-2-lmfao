@@ -22,8 +22,15 @@
 # ```
 
 def q3(prices):
-    # Escreva seu código aqui
-    pass
+    lucro_max = 0
+    for i in range(len(prices) - 1):
+        for j in range(i + 1, len(prices)):
+            lucro = prices[j] - prices[i]
+            if lucro > lucro_max:
+                lucro_max = lucro
+                
+    return lucro_max
+    
 
 
 if __name__ == '__main__':
