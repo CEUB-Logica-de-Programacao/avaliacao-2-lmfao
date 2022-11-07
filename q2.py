@@ -29,13 +29,13 @@ def q2(n):
 
     n = int(input("Qual o numero de degraus? "))
     n -= 3
-    t = 1
+    x = 1
     x1 = 1 
     x2 = 2
-    while t <= n:
-        Zn = Z[n1] + Z[N2]
+    while x <= n:
+        Zn = Z[x1] + Z[x2]
         Z.append(Zn)
-        t += 1 
+        x += 1 
         x1 += 1 
         x2 += 2 
     Z.sort(reverse=True)
