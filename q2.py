@@ -25,7 +25,21 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
+    Z = [1, 2, 3]
+
+n = int(input("Qual o numero de degraus? "))
+n -= 3
+t = 1
+x1 = 1 
+x2 = 2
+while t <= n:
+    Zn = Z[n1] + Z[N2]
+    Z.append(Zn)
+    t += 1 
+    x1 += 1 
+    x2 += 2 
+Z.sort(reverse=True)
+print(Z[0])
     pass
 
 
