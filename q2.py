@@ -43,5 +43,5 @@ def q2(n):
         pass
 
 
-    if __name__ == '__main__':
-        print(q2(2))
+if __name__ == '__main__':
+    print(q2(2))
