@@ -23,8 +23,12 @@
 # ```
 
 def q5(paths):
-    # Escreva seu código aqui
-    pass
+    destinos = {}
+    for caminho in paths:
+        destinos[caminho[0]] = caminho[1]
+    for destination in destinos.values():
+        if destination not in destinos.keys():
+            return destination
 
 
 if __name__ == '__main__':
