@@ -25,9 +25,19 @@
 
 
 def q2(n):
-    # Escreva seu código aqui
-    pass
+    if n == 1 or n == 2:
+        return n
 
+    primeiro = 1
+    segundo = 2
+    atual = 0
+
+    for degrau in range(3, n+1):
+        atual = primeiro + segundo
+        primeiro = segundo
+        segundo = atual
+
+    return atual
 
 if __name__ == '__main__':
-    print(q2(2))
+    print(q2(5))
