@@ -39,8 +39,8 @@ def q2(n):
         x1 += 1 
         x2 += 2 
     Z.sort(reverse=True)
-    print(Z[0])
-        pass
+    return Z[0]
+       
 
 
 if __name__ == '__main__':
